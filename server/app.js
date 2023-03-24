@@ -41,7 +41,7 @@ app.use("/", routes);
 // session
 app.use(
   session({
-    secret: "some super strong secret mouse cat shit blat",
+    secret: process.env.SECRET,
     resave: true,
     saveUninitialized: true,
   })
